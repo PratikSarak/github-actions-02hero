@@ -1,8 +1,8 @@
 # This is workflow name
 name: Hello
-
+# automatic pipline work when code in commited
 on:
-  workflow_dispatch:
+  push: 
   
   
     
@@ -22,6 +22,7 @@ jobs:
 
   # second job
   details:
+    needs: greet
     runs-on: ubuntu-latest
 
     steps:
