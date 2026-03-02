@@ -18,7 +18,7 @@ jobs:
 
       - name: checkout code
 
-        run: echo "COde Clone from GitHub"
+        run: echo "Code Clone from GitHub"
 
   build:
 
@@ -45,7 +45,7 @@ jobs:
 
   deploy:
 
-    needs: [test, build]
+    needs: test
 
     runs-on: ubuntu-latest
 
